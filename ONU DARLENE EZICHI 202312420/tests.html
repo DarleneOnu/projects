@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<Html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Portforlio Website</title>
+    <link rel="stylesheet" href="tests.css">
+</head>
+<body>
+
+    <!--Navigation bar-->
+    <header>
+    <nav>
+        <div class="navbar">
+         <ul>
+           <li><a href=#home>Home</a></li>
+           <li><a href=#about>About</a></li>
+           <li><a href=#project>Project</a></li>
+           <li><a href=#contact>Contact</a></li>
+         </ul>
+        </div>
+    </nav>
+    </header>
+
+    <!--Hero section-->
+    <section id="home" class="hero">
+      <h1>DARLENE EZICHI ONU</h1>
+      <h2>WELCOME TO DARLENE'S PORTFOLIO</h2>
+      <p> <img src="heroimg.jpg" alt="heroimage"></p>
+    
+    </section>
+
+    <!--About me section-->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>My name is Darlene, I'm an aspiring programmer.</p>
+            <p> I'm currently sixteen and in 100 level in Bells University of Technology.</p>
+            <p>I was born on December 19th 2007.</p>
+            <p> I hope to learn more about programming.</p>
+            <p> I'm an aspiring web designer.<a href=#contact>Contact me.</a> </p>  
+        </div>
+    </section>
+
+    <!--Project section-->
+    <section id="project" class="projects">
+        <h2>MY WORK</h2>
+        <div class="filter-buttons">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('age-calculator')">Age Calculator</button>
+            <button onclick="filterProjects('tip-calculator')">Tip Calculator</button>
+        </div>
+        <div class="project-grid">
+            <div class="project age-calculator">
+        <div class="project-grid">
+            <grid><h3> Age calculator</h3><img src="agecalc.jpg"><p>This calculates your age when you provide your date of birth.</p><p><a href="codingproject/agecalc.html">View</a></p></grid>
+            <br>
+           <grid><h3>Tip Calculator</h3><img src="tipcalc.jpg"><p>This calculates tips collected.</p><p><a href="codingproject/tipcalc.html">View</a></p></grid>
+        </div>
+    </section>
+    <!--skills section-->
+    <section id="skill" class="skills">
+        <h2>My Skills</h2>
+       <tr>
+        <td>Web development</td>
+        <td>⭐⭐</td>
+       </tr>
+       <tr>
+        <td>UI/UX designer</td>
+        <td>⭐</td>
+       </tr>   
+    </section>
+    <!--Experience section-->
+    <section id="exp" class="exps">
+        <h2>My Experience</h2>
+        <tr>
+            <td>New Horizon Resource Center</td>
+            <td>One year</td>
+        </tr>
+        
+    </section>
+     <!--contact section-->
+    <section id="contact" class="contact">
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form id="contactForm" action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                       <textarea name="message" placeholder="Your Message" required></textarea>
+                       <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+<footer class="footer">
+    <div class="date-time">
+        <span id="date"></span>
+        <span id="time"></span>
+    </div>
+    <div class="copyright">
+        &copy; <span id="year">2024</span>
+        Darlene's Portforlio. All rights reserved
+    </div>
+</footer>
+    <!--Javascript-->
+    <script src="tests.js">
+        
+    </script>
+</body>
+</Html>
